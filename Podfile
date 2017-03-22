@@ -7,6 +7,8 @@ target 'AppStore' do
 
   # Pods for AppStore
   pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+  pod 'AlamofireImage'
 
 
   target 'AppStoreTests' do
