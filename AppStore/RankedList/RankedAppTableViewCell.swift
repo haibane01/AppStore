@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RankedAppCollectionViewCell: UICollectionViewCell, RankedAppViewContainerType, RankedAppViewType{
+class RankedAppTableViewCell: UITableViewCell, RankedAppViewContainerType, RankedAppViewType{
     
     @IBOutlet weak var rankLabel: UILabel?
     @IBOutlet weak var iconImageView: UIImageView?
@@ -19,7 +19,7 @@ class RankedAppCollectionViewCell: UICollectionViewCell, RankedAppViewContainerT
     }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        iconImageView?.roundCorner(radius: 6, color: UIColor(red: 0.7, green: 0.7, blue: 0.7, alpha: 1).cgColor)
     }
     
     override func prepareForReuse() {
@@ -28,6 +28,4 @@ class RankedAppCollectionViewCell: UICollectionViewCell, RankedAppViewContainerT
         iconImageView?.image = nil
         titleLabel?.text = ""
     }
-
 }
-

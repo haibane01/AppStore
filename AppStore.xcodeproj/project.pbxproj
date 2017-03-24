@@ -17,11 +17,18 @@
 		BC77C9181E82AD0300F7D0D9 /* RankedAppListFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C9171E82AD0300F7D0D9 /* RankedAppListFeed.swift */; };
 		BC77C91A1E82AEA000F7D0D9 /* RankedAppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C9191E82AEA000F7D0D9 /* RankedAppList.swift */; };
 		BC77C91C1E82B24000F7D0D9 /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C91B1E82B24000F7D0D9 /* BaseEntity.swift */; };
-		BC77C9201E82C9A000F7D0D9 /* RankedAppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C91E1E82C9A000F7D0D9 /* RankedAppCollectionViewCell.swift */; };
-		BC77C9211E82C9A000F7D0D9 /* RankedAppCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC77C91F1E82C9A000F7D0D9 /* RankedAppCollectionViewCell.xib */; };
+		BC77C9201E82C9A000F7D0D9 /* RankedAppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C91E1E82C9A000F7D0D9 /* RankedAppTableViewCell.swift */; };
 		BC77C9271E82CB7100F7D0D9 /* RankedAppViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C9261E82CB7100F7D0D9 /* RankedAppViewType.swift */; };
 		BC77C9291E82CC3E00F7D0D9 /* RankViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C9281E82CC3E00F7D0D9 /* RankViewType.swift */; };
 		BC77C92B1E82CDF300F7D0D9 /* RankedAppViewContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C92A1E82CDF300F7D0D9 /* RankedAppViewContainerType.swift */; };
+		BC77C92D1E83F97100F7D0D9 /* DynamicHeightViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C92C1E83F97100F7D0D9 /* DynamicHeightViewType.swift */; };
+		BC77C9311E84076A00F7D0D9 /* RankedAppTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC77C92F1E84076A00F7D0D9 /* RankedAppTableViewCell.xib */; };
+		BC77C9341E841B5200F7D0D9 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C9331E841B5200F7D0D9 /* UIViewExtension.swift */; };
+		BC77C9361E841DCA00F7D0D9 /* RankedAppListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C9351E841DCA00F7D0D9 /* RankedAppListProtocol.swift */; };
+		BC77C9391E84238E00F7D0D9 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C9381E84238E00F7D0D9 /* ArrayExtension.swift */; };
+		BC77C93B1E8426AE00F7D0D9 /* RankedAppListPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C93A1E8426AE00F7D0D9 /* RankedAppListPresentor.swift */; };
+		BC77C93D1E84279F00F7D0D9 /* RankedAppCategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C93C1E84279F00F7D0D9 /* RankedAppCategoryType.swift */; };
+		BC77C93F1E842AE500F7D0D9 /* RankedAppListViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC77C93E1E842AE500F7D0D9 /* RankedAppListViewInteractor.swift */; };
 		BC8802D31E8247BD003AF838 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8802D21E8247BD003AF838 /* AppDelegate.swift */; };
 		BC8802D81E8247BD003AF838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8802D61E8247BD003AF838 /* Main.storyboard */; };
 		BC8802DA1E8247BD003AF838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8802D91E8247BD003AF838 /* Assets.xcassets */; };
@@ -61,11 +68,18 @@
 		BC77C9171E82AD0300F7D0D9 /* RankedAppListFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppListFeed.swift; sourceTree = "<group>"; };
 		BC77C9191E82AEA000F7D0D9 /* RankedAppList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppList.swift; sourceTree = "<group>"; };
 		BC77C91B1E82B24000F7D0D9 /* BaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
-		BC77C91E1E82C9A000F7D0D9 /* RankedAppCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppCollectionViewCell.swift; sourceTree = "<group>"; };
-		BC77C91F1E82C9A000F7D0D9 /* RankedAppCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankedAppCollectionViewCell.xib; sourceTree = "<group>"; };
+		BC77C91E1E82C9A000F7D0D9 /* RankedAppTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppTableViewCell.swift; sourceTree = "<group>"; };
 		BC77C9261E82CB7100F7D0D9 /* RankedAppViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppViewType.swift; sourceTree = "<group>"; };
 		BC77C9281E82CC3E00F7D0D9 /* RankViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewType.swift; sourceTree = "<group>"; };
 		BC77C92A1E82CDF300F7D0D9 /* RankedAppViewContainerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppViewContainerType.swift; sourceTree = "<group>"; };
+		BC77C92C1E83F97100F7D0D9 /* DynamicHeightViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightViewType.swift; sourceTree = "<group>"; };
+		BC77C92F1E84076A00F7D0D9 /* RankedAppTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankedAppTableViewCell.xib; sourceTree = "<group>"; };
+		BC77C9331E841B5200F7D0D9 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BC77C9351E841DCA00F7D0D9 /* RankedAppListProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppListProtocol.swift; sourceTree = "<group>"; };
+		BC77C9381E84238E00F7D0D9 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		BC77C93A1E8426AE00F7D0D9 /* RankedAppListPresentor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppListPresentor.swift; sourceTree = "<group>"; };
+		BC77C93C1E84279F00F7D0D9 /* RankedAppCategoryType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppCategoryType.swift; sourceTree = "<group>"; };
+		BC77C93E1E842AE500F7D0D9 /* RankedAppListViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankedAppListViewInteractor.swift; sourceTree = "<group>"; };
 		BC8802CF1E8247BD003AF838 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8802D21E8247BD003AF838 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8802D71E8247BD003AF838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,10 +125,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC3141D01E8537B2001C9A87 /* RankedAppDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RankedAppDetail;
+			sourceTree = "<group>";
+		};
 		BC77C8E51E829C1E00F7D0D9 /* RankedList */ = {
 			isa = PBXGroup;
 			children = (
 				BC77C91D1E82C97800F7D0D9 /* Cell */,
+				BC77C9351E841DCA00F7D0D9 /* RankedAppListProtocol.swift */,
+				BC77C93A1E8426AE00F7D0D9 /* RankedAppListPresentor.swift */,
+				BC77C93E1E842AE500F7D0D9 /* RankedAppListViewInteractor.swift */,
 				BC77C9131E82A4D600F7D0D9 /* RankedAppListDataService.swift */,
 				BC77C9091E82A0BE00F7D0D9 /* RankedAppListViewController.swift */,
 			);
@@ -124,6 +148,7 @@
 		BC77C8E81E829C4700F7D0D9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BC77C9371E84237E00F7D0D9 /* Extension */,
 				BC77C9241E82CA9A00F7D0D9 /* Model */,
 				BC77C9221E82C9FD00F7D0D9 /* UI */,
 				BC77C8EC1E829D0100F7D0D9 /* Networking */,
@@ -145,8 +170,8 @@
 		BC77C91D1E82C97800F7D0D9 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				BC77C91E1E82C9A000F7D0D9 /* RankedAppCollectionViewCell.swift */,
-				BC77C91F1E82C9A000F7D0D9 /* RankedAppCollectionViewCell.xib */,
+				BC77C91E1E82C9A000F7D0D9 /* RankedAppTableViewCell.swift */,
+				BC77C92F1E84076A00F7D0D9 /* RankedAppTableViewCell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -154,6 +179,7 @@
 		BC77C9221E82C9FD00F7D0D9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BC77C9321E8419EF00F7D0D9 /* Extension */,
 				BC77C9231E82C9FD00F7D0D9 /* Protocol */,
 			);
 			path = UI;
@@ -165,6 +191,7 @@
 				BC77C9261E82CB7100F7D0D9 /* RankedAppViewType.swift */,
 				BC77C9281E82CC3E00F7D0D9 /* RankViewType.swift */,
 				BC77C92A1E82CDF300F7D0D9 /* RankedAppViewContainerType.swift */,
+				BC77C92C1E83F97100F7D0D9 /* DynamicHeightViewType.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -181,8 +208,25 @@
 			isa = PBXGroup;
 			children = (
 				BC77C9111E82A3DE00F7D0D9 /* RankedAppType.swift */,
+				BC77C93C1E84279F00F7D0D9 /* RankedAppCategoryType.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BC77C9321E8419EF00F7D0D9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C9331E841B5200F7D0D9 /* UIViewExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		BC77C9371E84237E00F7D0D9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BC77C9381E84238E00F7D0D9 /* ArrayExtension.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		BC8802C61E8247BD003AF838 = {
@@ -212,6 +256,7 @@
 			children = (
 				BC77C8E81E829C4700F7D0D9 /* Common */,
 				BC77C8E51E829C1E00F7D0D9 /* RankedList */,
+				BC3141D01E8537B2001C9A87 /* RankedAppDetail */,
 				BC8802D21E8247BD003AF838 /* AppDelegate.swift */,
 				BC8802D61E8247BD003AF838 /* Main.storyboard */,
 				BC8802D91E8247BD003AF838 /* Assets.xcassets */,
@@ -378,8 +423,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC77C9311E84076A00F7D0D9 /* RankedAppTableViewCell.xib in Resources */,
 				BC8802DD1E8247BD003AF838 /* LaunchScreen.storyboard in Resources */,
-				BC77C9211E82C9A000F7D0D9 /* RankedAppCollectionViewCell.xib in Resources */,
 				BC8802DA1E8247BD003AF838 /* Assets.xcassets in Resources */,
 				BC8802D81E8247BD003AF838 /* Main.storyboard in Resources */,
 			);
@@ -545,16 +590,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8802D31E8247BD003AF838 /* AppDelegate.swift in Sources */,
+				BC77C93B1E8426AE00F7D0D9 /* RankedAppListPresentor.swift in Sources */,
 				BC77C9161E82A77700F7D0D9 /* RankedApp.swift in Sources */,
 				BC77C91A1E82AEA000F7D0D9 /* RankedAppList.swift in Sources */,
 				BC77C90F1E82A0BE00F7D0D9 /* RankedAppListViewController.swift in Sources */,
+				BC77C9341E841B5200F7D0D9 /* UIViewExtension.swift in Sources */,
 				BC77C9291E82CC3E00F7D0D9 /* RankViewType.swift in Sources */,
 				BC77C9121E82A3DE00F7D0D9 /* RankedAppType.swift in Sources */,
 				BC77C91C1E82B24000F7D0D9 /* BaseEntity.swift in Sources */,
-				BC77C9201E82C9A000F7D0D9 /* RankedAppCollectionViewCell.swift in Sources */,
+				BC77C9201E82C9A000F7D0D9 /* RankedAppTableViewCell.swift in Sources */,
 				BC77C9271E82CB7100F7D0D9 /* RankedAppViewType.swift in Sources */,
 				BC77C9181E82AD0300F7D0D9 /* RankedAppListFeed.swift in Sources */,
+				BC77C9391E84238E00F7D0D9 /* ArrayExtension.swift in Sources */,
+				BC77C93F1E842AE500F7D0D9 /* RankedAppListViewInteractor.swift in Sources */,
 				BC77C92B1E82CDF300F7D0D9 /* RankedAppViewContainerType.swift in Sources */,
+				BC77C92D1E83F97100F7D0D9 /* DynamicHeightViewType.swift in Sources */,
+				BC77C9361E841DCA00F7D0D9 /* RankedAppListProtocol.swift in Sources */,
+				BC77C93D1E84279F00F7D0D9 /* RankedAppCategoryType.swift in Sources */,
 				BC77C9141E82A4D600F7D0D9 /* RankedAppListDataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

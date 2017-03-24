@@ -18,7 +18,7 @@ class RankedApp: Mappable, RankedAppType{
     
     func mapping(map: Map) {
         appID <- map["id"]
-        appTitle <- map["title"]
+        appTitle <- map["im:name"]
         appIcons <- map["im:image"]
     }
     

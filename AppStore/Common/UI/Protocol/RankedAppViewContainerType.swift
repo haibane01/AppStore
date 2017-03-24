@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 import AlamofireImage
 protocol RankedAppViewContainerType {
     var rankedAppView: RankedAppViewType?{get}
@@ -15,8 +16,10 @@ protocol RankedAppViewContainerType {
 
 extension RankedAppViewContainerType {
     func configure(with rankedAppType: RankedAppType) {
-        if let rankedAppView =  self.rankedAppView {
-            rankedAppView.rankLabel?.text = "\(rankedAppType.rank)"
+        if let rankedAppView = self.rankedAppView {
+            if let rank = rankedAppType.rank {
+                rankedAppView.rankLabel?.text = "\(rank)"
+            }
             rankedAppView.titleLabel?.text = rankedAppType.title
             if let iconURL = rankedAppType.icon {
                 rankedAppView.iconImageView?.af_setImage(withURL: iconURL)

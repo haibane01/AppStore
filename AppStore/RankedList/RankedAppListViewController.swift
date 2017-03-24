@@ -10,45 +10,52 @@
 
 import UIKit
 
-final class RankedAppListViewController: UIViewController {
-
-    @IBOutlet fileprivate weak var rankedAppListCollectionView: UICollectionView!
+final class RankedAppListViewController: UIViewController, RankedAppListViewProtocol {
+    
+    lazy var rankedAppListViewPresentor: RankedAppListViewPresentorProtocol = RankedAppListViewPresentor()
     fileprivate var rankedAppList: [RankedAppType]?
+    @IBOutlet fileprivate weak var rankedAppListTableView: UITableView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        rankedAppListCollectionView.register(UINib(nibName: "RankedAppCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "RankedAppCell")
-        
-        RankedAppListDataService().fetchRankedAppList { [weak self] (rankedAppList: [RankedAppType]?) in
-            self?.rankedAppList = rankedAppList
-            self?.rankedAppListCollectionView?.reloadData()
-        }
+        rankedAppListViewPresentor.rankedAppListView = self
+        rankedAppListViewPresentor.viewDidLoad()
+        configureRankedAppListTableView()
+    }
+    
+    private func configureRankedAppListTableView() {
+        rankedAppListTableView.estimatedRowHeight = 60
+        rankedAppListTableView.rowHeight = UITableViewAutomaticDimension
+        rankedAppListTableView.tableFooterView = UIView()
+        rankedAppListTableView.register(UINib(nibName: "RankedAppTableViewCell", bundle: nil), forCellReuseIdentifier: "RankedAppTableViewCell")
+    }
+    
+    func show(from rankedAppList:[RankedAppType]?) {
+        self.rankedAppList = rankedAppList
+        rankedAppListTableView?.reloadData()
     }
 
 }
 
-extension RankedAppListViewController: UICollectionViewDelegate {
-    
+extension RankedAppListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        rankedAppListViewPresentor.didSelect(rankedAppList?.item(at: indexPath.row))
+    }
 }
 
-extension RankedAppListViewController: UICollectionViewDataSource {
-    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+extension RankedAppListViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return rankedAppList?.count ?? 0
     }
     
-    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RankedAppCell", for: indexPath) as! RankedAppCollectionViewCell
-        if var rankedApp = rankedAppList?[indexPath.row] {
-            rankedApp.rank = indexPath.row + 1
-            cell.configure(with: rankedApp)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RankedAppTableViewCell", for: indexPath) as! RankedAppTableViewCell
+        if var rankedAppData = rankedAppList?.item(at: indexPath.row) {
+            rankedAppData.rank = indexPath.row + 1
+            cell.configure(with: rankedAppData)
         }
         return cell
     }
-
 }
 
-extension RankedAppListViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: UIScreen.main.bounds.width, height: 80)
-    }
-
-}
