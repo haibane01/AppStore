@@ -1,5 +1,5 @@
 //
-//  BaseEntity.swift
+//  RankedAppAttributes.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 22..
@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class BaseEntity: Mappable {
+class RankedAppAttributes: Mappable {
     var attributes: Dictionary<String, Any>?
     var label: String?
     required init?(map: Map) {

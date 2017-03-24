@@ -9,9 +9,9 @@
 import Foundation
 import ObjectMapper
 class RankedApp: Mappable, RankedAppType{
-    var appID: BaseEntity?
-    var appTitle: BaseEntity?
-    var appIcons: [BaseEntity]?
+    var appID: RankedAppAttributes?
+    var appTitle: RankedAppAttributes?
+    var appIcons: [RankedAppAttributes]?
     required init?(map: Map) {
         
     }
