@@ -10,7 +10,7 @@ import UIKit
 
 class AppTableViewCell: UITableViewCell, AppViewContainerType, AppViewType{
     
-    @IBOutlet weak var rankLabel: UILabel?
+    @IBOutlet weak var indexLabel: UILabel?
     @IBOutlet weak var iconImageView: UIImageView?
     @IBOutlet weak var titleLabel: UILabel?
 
@@ -24,8 +24,8 @@ class AppTableViewCell: UITableViewCell, AppViewContainerType, AppViewType{
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        rankLabel?.text = ""
+        indexLabel?.text = ""
         iconImageView?.image = nil
         titleLabel?.text = ""
-    }
+    }    
 }

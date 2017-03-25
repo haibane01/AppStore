@@ -23,7 +23,7 @@ class App: Mappable, AppType{
     }
     
     //MARK - AppType
-    var rank: Int?
+    var index: Int?
     var title:String? {return self.appTitle?.label}
     var icon: URL? {
         if let entites = self.appIcons {

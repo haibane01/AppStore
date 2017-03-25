@@ -61,7 +61,7 @@
             <accessibility key="accessibilityConfiguration" identifier="RankedAppTableViewCell"/>
             <connections>
                 <outlet property="iconImageView" destination="Jdy-lW-JjL" id="b6b-Lb-A8e"/>
-                <outlet property="rankLabel" destination="FVM-fe-Jkv" id="ahA-73-nky"/>
+                <outlet property="indexLabel" destination="FVM-fe-Jkv" id="ahA-73-nky"/>
                 <outlet property="titleLabel" destination="pJs-46-daE" id="ve4-ge-S0g"/>
             </connections>
             <point key="canvasLocation" x="126.5" y="41"/>

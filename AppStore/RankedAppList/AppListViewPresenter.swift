@@ -34,7 +34,7 @@ class AppListViewPresenter: AppListViewPresenterProtocol {
         if let appList = appList {
             for (index, var app) in appList.enumerated()
             {
-                app.rank = index + 1
+                app.index = index + 1
             }
         }
         appListView?.show(from: appList)

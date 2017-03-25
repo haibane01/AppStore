@@ -11,5 +11,5 @@ protocol AppType {
     var title: String? {get}
     var icon: URL? {get}
     var id: Int? {get}
-    var rank: Int? {get set}
+    var index: Int? {get set}
 }

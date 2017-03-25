@@ -52,7 +52,7 @@ extension AppListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppTableViewCell", for: indexPath) as! AppTableViewCell
         if var appData = appList?.item(at: indexPath.row) {
-            appData.rank = indexPath.row + 1
+            appData.index = indexPath.row + 1
             cell.configure(with: appData)
         }
         return cell

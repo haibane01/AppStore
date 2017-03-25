@@ -51,6 +51,11 @@
 		BCB3F5FB1E8693AF00E21EB2 /* AppListFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F01E8693AF00E21EB2 /* AppListFeed.swift */; };
 		BCB3F5FC1E8693AF00E21EB2 /* DynamicHeightViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F31E8693AF00E21EB2 /* DynamicHeightViewType.swift */; };
 		BCB3F5FD1E8693AF00E21EB2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F41E8693AF00E21EB2 /* UIViewExtension.swift */; };
+		BCB3F6031E869C1300E21EB2 /* SlideImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6021E869C1300E21EB2 /* SlideImageView.swift */; };
+		BCB3F6051E86A3DA00E21EB2 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6041E86A3DA00E21EB2 /* UIStackViewExtension.swift */; };
+		BCB3F60C1E86BEE900E21EB2 /* ScreenshotImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */; };
+		BCB3F60D1E86BEE900E21EB2 /* ScreenshotImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */; };
+		BCB3F6101E86BF3000E21EB2 /* SlideViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +129,11 @@
 		BCB3F5F01E8693AF00E21EB2 /* AppListFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListFeed.swift; sourceTree = "<group>"; };
 		BCB3F5F31E8693AF00E21EB2 /* DynamicHeightViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightViewType.swift; sourceTree = "<group>"; };
 		BCB3F5F41E8693AF00E21EB2 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		BCB3F6021E869C1300E21EB2 /* SlideImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideImageView.swift; sourceTree = "<group>"; };
+		BCB3F6041E86A3DA00E21EB2 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
+		BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotImageCell.swift; sourceTree = "<group>"; };
+		BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotImageCell.xib; sourceTree = "<group>"; };
+		BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewProtocol.swift; sourceTree = "<group>"; };
 		C8F39901F86427F1F9FE3265 /* Pods-AppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppStore/Pods-AppStore.release.xcconfig"; sourceTree = "<group>"; };
 		E905481A9410FF03CA20AB0E /* Pods-AppStoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppStoreUITests/Pods-AppStoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EA8F61C41BF90F642D645BE8 /* Pods_AppStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,14 +243,14 @@
 		BCB3F5AF1E86931700E21EB2 /* RankedAppDetail */ = {
 			isa = PBXGroup;
 			children = (
+				BCB3F5B61E86931700E21EB2 /* Protocol */,
+				BCB3F5BC1E86931700E21EB2 /* View */,
 				BCB3F5B01E86931700E21EB2 /* AppDetailDataService.swift */,
 				BCB3F5B11E86931700E21EB2 /* AppDetailViewController.swift */,
 				BCB3F5B21E86931700E21EB2 /* AppDetailViewController.xib */,
 				BCB3F5B31E86931700E21EB2 /* AppDetailViewInteractor.swift */,
 				BCB3F5B41E86931700E21EB2 /* AppDetailViewPresenter.swift */,
 				BCB3F5B51E86931700E21EB2 /* AppDetailViewRouter.swift */,
-				BCB3F5B61E86931700E21EB2 /* Protocol */,
-				BCB3F5BC1E86931700E21EB2 /* View */,
 			);
 			path = RankedAppDetail;
 			sourceTree = "<group>";
@@ -270,13 +280,13 @@
 		BCB3F5C01E86931700E21EB2 /* RankedAppList */ = {
 			isa = PBXGroup;
 			children = (
+				BCB3F5C61E86931700E21EB2 /* Protocol */,
+				BCB3F5CC1E86931700E21EB2 /* View */,
 				BCB3F5C11E86931700E21EB2 /* AppListDataService.swift */,
 				BCB3F5C21E86931700E21EB2 /* AppListViewController.swift */,
 				BCB3F5C31E86931700E21EB2 /* AppListViewInteractor.swift */,
 				BCB3F5C41E86931700E21EB2 /* AppListViewPresenter.swift */,
 				BCB3F5C51E86931700E21EB2 /* AppListViewRouter.swift */,
-				BCB3F5C61E86931700E21EB2 /* Protocol */,
-				BCB3F5CC1E86931700E21EB2 /* View */,
 			);
 			path = RankedAppList;
 			sourceTree = "<group>";
@@ -328,6 +338,7 @@
 			children = (
 				BCB3F5F21E8693AF00E21EB2 /* Protocol */,
 				BCB3F5F41E8693AF00E21EB2 /* UIViewExtension.swift */,
+				BCB3F6041E86A3DA00E21EB2 /* UIStackViewExtension.swift */,
 				BCB3F5F51E8693AF00E21EB2 /* View */,
 			);
 			path = UI;
@@ -344,8 +355,28 @@
 		BCB3F5F51E8693AF00E21EB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCB3F5FE1E8695FD00E21EB2 /* SlideView */,
+				BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */,
+				BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BCB3F5FE1E8695FD00E21EB2 /* SlideView */ = {
+			isa = PBXGroup;
+			children = (
+				BCB3F60E1E86BF3000E21EB2 /* Protocol */,
+				BCB3F6021E869C1300E21EB2 /* SlideImageView.swift */,
+			);
+			path = SlideView;
+			sourceTree = "<group>";
+		};
+		BCB3F60E1E86BF3000E21EB2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */,
+			);
+			path = Protocol;
 			sourceTree = "<group>";
 		};
 		BD9B6261B35119DE68D61224 /* Frameworks */ = {
@@ -488,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8802DD1E8247BD003AF838 /* LaunchScreen.storyboard in Resources */,
+				BCB3F60D1E86BEE900E21EB2 /* ScreenshotImageCell.xib in Resources */,
 				BCB3F5E81E86931700E21EB2 /* AppTableViewCell.xib in Resources */,
 				BC8802DA1E8247BD003AF838 /* Assets.xcassets in Resources */,
 				BC8802D81E8247BD003AF838 /* Main.storyboard in Resources */,
@@ -659,6 +691,7 @@
 				BCB3F5E41E86931700E21EB2 /* AppType.swift in Sources */,
 				BCB3F5DD1E86931700E21EB2 /* AppListDataService.swift in Sources */,
 				BCB3F5DE1E86931700E21EB2 /* AppListViewController.swift in Sources */,
+				BCB3F60C1E86BEE900E21EB2 /* ScreenshotImageCell.swift in Sources */,
 				BCB3F5D41E86931700E21EB2 /* AppDetailViewRouter.swift in Sources */,
 				BCB3F5DA1E86931700E21EB2 /* AppDetailHeaderViewCell.swift in Sources */,
 				BCB3F5E21E86931700E21EB2 /* AppCategoryType.swift in Sources */,
@@ -679,9 +712,12 @@
 				BCB3F5E11E86931700E21EB2 /* AppListViewRouter.swift in Sources */,
 				BCB3F5F91E8693AF00E21EB2 /* AppDetail.swift in Sources */,
 				BCB3F5D21E86931700E21EB2 /* AppDetailViewInteractor.swift in Sources */,
+				BCB3F6051E86A3DA00E21EB2 /* UIStackViewExtension.swift in Sources */,
+				BCB3F6031E869C1300E21EB2 /* SlideImageView.swift in Sources */,
 				BCB3F5FD1E8693AF00E21EB2 /* UIViewExtension.swift in Sources */,
 				BCB3F5D71E86931700E21EB2 /* AppDetailHeaderViewType.swift in Sources */,
 				BCB3F5E51E86931700E21EB2 /* AppViewContainerType.swift in Sources */,
+				BCB3F6101E86BF3000E21EB2 /* SlideViewProtocol.swift in Sources */,
 				BCB3F5D81E86931700E21EB2 /* AppDetailType.swift in Sources */,
 				BCB3F5D61E86931700E21EB2 /* AppDetailHeaderViewContainerType.swift in Sources */,
 				BCB3F5E71E86931700E21EB2 /* AppTableViewCell.swift in Sources */,

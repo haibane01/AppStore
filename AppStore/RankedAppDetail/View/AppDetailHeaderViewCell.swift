@@ -16,7 +16,7 @@ class AppDetailHeaderViewCell: UITableViewCell, AppDetailHeaderViewType, AppDeta
     var appDetailHeaderView: AppDetailHeaderViewType? {
         return self
     }
-    var rankLabel: UILabel? = nil
+    var indexLabel: UILabel? = nil
     
     @IBOutlet weak var titleLabel: UILabel?
     @IBOutlet weak var iconImageView: UIImageView?

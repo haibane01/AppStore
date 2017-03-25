@@ -9,7 +9,7 @@
 import UIKit
 
 protocol AppViewType: class {
-    var rankLabel: UILabel? {get}
+    var indexLabel: UILabel? {get}
     var iconImageView: UIImageView? {get}
     var titleLabel: UILabel? {get}
 }

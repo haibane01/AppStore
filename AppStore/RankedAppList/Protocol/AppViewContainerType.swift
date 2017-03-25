@@ -17,8 +17,8 @@ protocol AppViewContainerType {
 extension AppViewContainerType {
     func configure(with appType: AppType) {
         if let appView = self.appView {
-            if let rank = appType.rank {
-                appView.rankLabel?.text = "\(rank)"
+            if let index = appType.index {
+                appView.indexLabel?.text = "\(index)"
             }
             appView.titleLabel?.text = appType.title
             if let iconURL = appType.icon {

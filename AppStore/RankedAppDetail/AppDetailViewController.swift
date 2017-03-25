@@ -22,7 +22,9 @@ class AppDetailViewController: UIViewController, AppDetailViewProtocol {
         tableView?.rowHeight = UITableViewAutomaticDimension
         tableView?.tableFooterView = UIView()
         tableView?.register(UINib(nibName: "AppDetailHeaderViewCell", bundle: nil), forCellReuseIdentifier: "AppDetailHeaderViewCell")
-
+        tableView?.register(UINib(nibName: "ScreenshotImageCell", bundle: nil), forCellReuseIdentifier: "ScreenshotImageCell")
+        tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,22 +46,46 @@ extension AppDetailViewController: UITableViewDelegate {
 
 extension AppDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "AppDetailHeaderViewCell", for: indexPath) as! AppDetailHeaderViewCell
-        if let appDetil = self.appDetailViewPresenter?.appDetail
-        {
-            cell.configure(with: appDetil)
+
+        switch indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AppDetailHeaderViewCell", for: indexPath) as! AppDetailHeaderViewCell
+            if let appDetil = self.appDetailViewPresenter?.appDetail
+            {
+                cell.configure(with: appDetil)
+            }
+            return cell
+        case 1:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ScreenshotImageCell", for: indexPath) as! ScreenshotImageCell
+            if let appDetil = self.appDetailViewPresenter?.appDetail
+            {
+                cell.configure(with: appDetil.images)
+            }
+            return cell
+        default:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+            return cell
         }
-        return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == 1 {
+            return UIScreen.main.bounds.height
+        }
+        return UITableViewAutomaticDimension
+    }
+    
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {
         switch indexPath.row {
         case 0:
             return 80
+        case 1:
+            return UIScreen.main.bounds.height
         default:
             return 44
         }

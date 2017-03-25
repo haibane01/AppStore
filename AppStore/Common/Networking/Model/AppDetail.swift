@@ -33,7 +33,7 @@ class AppDetail: Mappable
 
 extension AppDetail: AppDetailType, AppDetailHeaderType
 {
-    var rank: Int? {
+    var index: Int? {
         get {
             return nil
         }
