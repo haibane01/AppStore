@@ -1,5 +1,5 @@
 //
-//  RankedAppViewType.swift
+//  AppViewType.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 23..
@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol RankedAppViewType: class {
+protocol AppViewType: class {
     var rankLabel: UILabel? {get}
     var iconImageView: UIImageView? {get}
     var titleLabel: UILabel? {get}

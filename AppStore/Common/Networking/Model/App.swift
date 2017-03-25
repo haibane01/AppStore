@@ -1,5 +1,5 @@
 //
-//  RankedApp.swift
+//  App.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 22..
@@ -8,10 +8,10 @@
 
 import Foundation
 import ObjectMapper
-class RankedApp: Mappable, RankedAppType{
-    var appID: RankedAppAttributes?
-    var appTitle: RankedAppAttributes?
-    var appIcons: [RankedAppAttributes]?
+class App: Mappable, AppType{
+    var appID: AppAttributes?
+    var appTitle: AppAttributes?
+    var appIcons: [AppAttributes]?
     required init?(map: Map) {
         
     }
@@ -22,7 +22,7 @@ class RankedApp: Mappable, RankedAppType{
         appIcons <- map["im:image"]
     }
     
-    //MARK - RankedAppType
+    //MARK - AppType
     var rank: Int?
     var title:String? {return self.appTitle?.label}
     var icon: URL? {
@@ -34,6 +34,12 @@ class RankedApp: Mappable, RankedAppType{
         }
         return nil
     }
-    var id: Int? {return self.appID?.attributes?["im:id"] as? Int}
+    var id: Int? {
+        if let idString = self.appID?.attributes?["im:id"]
+        {
+            return Int(idString)
+        }
+        return nil
+    }
 
 }

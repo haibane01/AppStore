@@ -1,5 +1,5 @@
 //
-//  RankedAppCategory.swift
+//  AppCategory.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 24..
@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol RankedAppCategoryType: class {
+protocol AppCategoryType: class {
     var name: String? {get}
     var serial: Int? {get}
 }

@@ -1,5 +1,5 @@
 //
-//  RankedAppCollectionViewCell.swift
+//  AppCollectionViewCell.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 23..
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class RankedAppTableViewCell: UITableViewCell, RankedAppViewContainerType, RankedAppViewType{
+class AppTableViewCell: UITableViewCell, AppViewContainerType, AppViewType{
     
     @IBOutlet weak var rankLabel: UILabel?
     @IBOutlet weak var iconImageView: UIImageView?
     @IBOutlet weak var titleLabel: UILabel?
 
-    var rankedAppView: RankedAppViewType? {
+    var appView: AppViewType? {
         return self
     }
     override func awakeFromNib() {

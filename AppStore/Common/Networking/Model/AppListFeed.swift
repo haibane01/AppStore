@@ -1,5 +1,5 @@
 //
-//  RankedAppFeed.swift
+//  AppFeed.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 22..
@@ -9,8 +9,8 @@
 import Foundation
 import ObjectMapper
 
-class RankedAppListFeed: Mappable {
-    var entry: Array<RankedApp>?
+class AppListFeed: Mappable {
+    var entry: Array<App>?
     required init?(map: Map) {
         
     }

@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let navigationController = window?.rootViewController as! UINavigationController
+        let category = AppCategory()
+        category.name = "금융"
+        category.serial = 6015
+        
+        let viewController = AppListViewRouter.createViewController(category: category)
+        navigationController.pushViewController(viewController, animated: false)
+        
+        window?.makeKeyAndVisible()
         return true
     }
 

@@ -1,5 +1,5 @@
 //
-//  RankedAppList.swift
+//  AppAttributes.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 22..
@@ -9,13 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class RankedAppList: Mappable {
-    var feed: RankedAppListFeed?
+class AppAttributes: Mappable {
+    var attributes: Dictionary<String, String>?
+    var label: String?
     required init?(map: Map) {
         
     }
     
     func mapping(map: Map) {
-        feed <- map["feed"]
+        attributes <- map["attributes"]
+        label <- map["label"]
     }
 }

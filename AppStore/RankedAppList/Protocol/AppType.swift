@@ -1,5 +1,5 @@
 //
-//  RankedAppEntity.swift
+//  AppEntity.swift
 //  AppStore
 //
 //  Created by Sang Tae Kim on 2017. 3. 22..
@@ -7,7 +7,7 @@
 //
 import Foundation
 
-protocol RankedAppType {
+protocol AppType {
     var title: String? {get}
     var icon: URL? {get}
     var id: Int? {get}
