@@ -22,7 +22,6 @@ final class AppDetailViewController: UIViewController, AppDetailViewProtocol {
     private func configureTableView() {
         tableView?.estimatedRowHeight = 80
         tableView?.rowHeight = UITableViewAutomaticDimension
-        tableView?.tableFooterView = UIView()
         tableView?.register(UINib(nibName: "AppDetailHeaderViewCell", bundle: nil), forCellReuseIdentifier: "AppDetailHeaderViewCell")
         tableView?.register(UINib(nibName: "ScreenshotImageCell", bundle: nil), forCellReuseIdentifier: "ScreenshotImageCell")
         tableView?.register(UINib(nibName: "DynamicHeightTextCell", bundle: nil), forCellReuseIdentifier: "DynamicHeightTextCell")

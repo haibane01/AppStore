@@ -16,13 +16,13 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="81"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZbB-hN-cZj">
                         <rect key="frame" x="10" y="10" width="60" height="60"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="60" id="1P2-Ol-Bc1"/>
+                            <constraint firstAttribute="height" priority="999" constant="60" id="1P2-Ol-Bc1"/>
                             <constraint firstAttribute="width" constant="60" id="lbb-mM-Ahs"/>
                         </constraints>
                     </imageView>
@@ -44,7 +44,7 @@
                     <constraint firstItem="ZbB-hN-cZj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="A3j-nk-ogh"/>
                     <constraint firstItem="Cmp-eS-fmV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="DSd-IL-lgt"/>
                     <constraint firstAttribute="trailing" secondItem="Cmp-eS-fmV" secondAttribute="trailing" constant="10" id="Geb-ax-zP3"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZbB-hN-cZj" secondAttribute="bottom" constant="10" id="Gr4-Xk-DaJ"/>
+                    <constraint firstAttribute="bottom" secondItem="ZbB-hN-cZj" secondAttribute="bottom" constant="10" id="Gr4-Xk-DaJ"/>
                     <constraint firstItem="Cmp-eS-fmV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="IHH-Ul-B0r"/>
                     <constraint firstItem="ijj-ld-EkK" firstAttribute="leading" secondItem="ZbB-hN-cZj" secondAttribute="trailing" constant="10" id="Jun-cl-I0N"/>
                     <constraint firstItem="ZbB-hN-cZj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aW7-jm-jj9"/>

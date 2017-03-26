@@ -25,7 +25,6 @@ final class AppListViewController: UIViewController, AppListViewProtocol {
     private func configureTableView() {
         tableView.estimatedRowHeight = 60
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.tableFooterView = UIView()
         tableView.register(UINib(nibName: "AppTableViewCell", bundle: nil), forCellReuseIdentifier: "AppTableViewCell")
     }
     
