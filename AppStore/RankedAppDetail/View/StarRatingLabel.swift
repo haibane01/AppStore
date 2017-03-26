@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StarRatingLabel: UILabel, RatingViewType {
+final class StarRatingLabel: UILabel, RatingViewType {
     var rating: Float? {
         didSet {
             if let rating = self.rating

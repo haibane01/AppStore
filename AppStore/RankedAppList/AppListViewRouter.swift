@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppListViewRouter: AppListViewWireframeProtocol {
+final class AppListViewRouter: AppListViewWireframeProtocol {
     static func createViewController(category: AppCategoryType?) -> UIViewController
     {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

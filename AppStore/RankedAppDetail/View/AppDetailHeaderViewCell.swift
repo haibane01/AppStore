@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppDetailHeaderViewCell: UITableViewCell, AppDetailHeaderViewType, AppDetailHeaderViewContainerType {
+final class AppDetailHeaderViewCell: UITableViewCell, AppDetailHeaderViewType, AppDetailHeaderViewContainerType {
 
     var appView: AppViewType? {
         return self

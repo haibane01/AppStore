@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 import AlamofireObjectMapper
-class AppDetailDataService {
+final class AppDetailDataService {
     func fetchAppDetail(_ app: AppType, completeHandler:@escaping ((_ AppList: AppDetailType?)->()))
     {
         if let appID = app.id {

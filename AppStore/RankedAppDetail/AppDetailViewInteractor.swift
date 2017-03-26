@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AppDetailViewInteractor: AppDetailViewInteractorProtocol {
+final class AppDetailViewInteractor: AppDetailViewInteractorProtocol {
     weak var appDetailViewPresenter: AppDetailViewPresenterProtocol?
     
     func fetch(to app:AppType?)

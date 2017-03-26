@@ -12,7 +12,7 @@ enum AppDetailViewSection: Int {
     case header = 0, screenshot = 1, description = 2
 }
 
-class AppDetailViewPresenter: AppDetailViewPresenterProtocol {
+final class AppDetailViewPresenter: AppDetailViewPresenterProtocol {
     
     lazy var appDetailViewInteractor: AppDetailViewInteractorProtocol? = AppDetailViewInteractor()
     var app: AppType?

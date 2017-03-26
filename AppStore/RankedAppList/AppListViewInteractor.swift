@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AppListViewInteractor: AppListViewInteractorProtocol
+final class AppListViewInteractor: AppListViewInteractorProtocol
 {
     weak var appListViewPresenter: AppListViewPresenterProtocol?
     var category: AppCategoryType?

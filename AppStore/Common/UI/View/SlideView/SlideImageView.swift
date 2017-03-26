@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SlideImageView: UIView, SlideImageViewProtocol {
+final class SlideImageView: UIView, SlideImageViewProtocol {
     var index: Int? = 0
     var data: [URL]? {
         didSet {

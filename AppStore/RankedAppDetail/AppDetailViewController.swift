@@ -8,15 +8,17 @@
 
 import UIKit
 
-class AppDetailViewController: UIViewController, AppDetailViewProtocol {
+final class AppDetailViewController: UIViewController, AppDetailViewProtocol {
     var appDetailViewPresenter: AppDetailViewPresenterProtocol?
     @IBOutlet weak var tableView: UITableView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         appDetailViewPresenter?.viewDidLoad()
         self.configureTableView()
     }
+    
     private func configureTableView() {
         tableView?.estimatedRowHeight = 80
         tableView?.rowHeight = UITableViewAutomaticDimension
@@ -27,6 +29,7 @@ class AppDetailViewController: UIViewController, AppDetailViewProtocol {
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

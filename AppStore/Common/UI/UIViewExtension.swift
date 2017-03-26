@@ -8,17 +8,7 @@
 
 import UIKit
 extension UIView
-{
-    public var cornerRadius: CGFloat {
-        get {
-            return layer.cornerRadius
-        }
-        set {
-            layer.masksToBounds = true
-            layer.cornerRadius = abs(CGFloat(Int(newValue * 100)) / 100)
-        }
-    }
-    
+{    
     public func roundCorner(radius: CGFloat, color: CGColor) {
         layer.borderWidth = 1 / UIScreen.main.scale
         layer.borderColor = color

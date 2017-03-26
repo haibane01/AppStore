@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ScreenshotImageCell: UITableViewCell, SlideImageViewContainerType {
+final class ScreenshotImageCell: UITableViewCell, SlideImageViewContainerType {
     
     @IBOutlet weak var slideImageView: SlideImageView?
     override func awakeFromNib() {

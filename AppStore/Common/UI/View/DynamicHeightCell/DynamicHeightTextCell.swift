@@ -33,6 +33,7 @@ final class DynamicHeightTextCell: UITableViewCell, TextViewContainerType {
     func configureText(text: String?) {
         dynamicHeightTextLabel?.text = text
     }
+    
     func configureText(attributedText: NSAttributedString?) {
         dynamicHeightTextLabel?.attributedText = attributedText
     }

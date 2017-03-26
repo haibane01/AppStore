@@ -13,14 +13,13 @@ import UIKit
 final class AppListViewController: UIViewController, AppListViewProtocol {
     
     lazy var appListViewPresenter: AppListViewPresenterProtocol? = AppListViewPresenter()
-    fileprivate var appList: [AppType]?
     @IBOutlet fileprivate weak var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         appListViewPresenter?.appListView = self
         appListViewPresenter?.viewDidLoad()
-        configureTableView()
     }
     
     private func configureTableView() {
@@ -31,7 +30,6 @@ final class AppListViewController: UIViewController, AppListViewProtocol {
     }
     
     func show(from appList:[AppType]?) {
-        self.appList = appList
         tableView?.reloadData()
     }
 
@@ -40,18 +38,18 @@ final class AppListViewController: UIViewController, AppListViewProtocol {
 extension AppListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        appListViewPresenter?.didSelect(appList?.item(at: indexPath.row))
+        appListViewPresenter?.didSelect(appListViewPresenter?.appList?.item(at: indexPath.row))
     }
 }
 
 extension AppListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return appList?.count ?? 0
+        return appListViewPresenter?.appList?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AppTableViewCell", for: indexPath) as! AppTableViewCell
-        if var appData = appList?.item(at: indexPath.row) {
+        if var appData = appListViewPresenter?.appList?.item(at: indexPath.row) {
             appData.index = indexPath.row + 1
             cell.configure(with: appData)
         }

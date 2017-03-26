@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppDetailViewRouter: AppDetailViewWireframeProtocol {
+final class AppDetailViewRouter: AppDetailViewWireframeProtocol {
     static func createViewController(app: AppType?) -> UIViewController
     {
         let viewController = AppDetailViewController(nibName: "AppDetailViewController", bundle: nil)

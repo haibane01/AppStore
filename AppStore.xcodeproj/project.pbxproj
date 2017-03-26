@@ -55,7 +55,6 @@
 		BCB3F60C1E86BEE900E21EB2 /* ScreenshotImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */; };
 		BCB3F60D1E86BEE900E21EB2 /* ScreenshotImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */; };
 		BCB3F6101E86BF3000E21EB2 /* SlideViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */; };
-		BCB3F6121E86C57700E21EB2 /* AppDetailViewRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6111E86C57700E21EB2 /* AppDetailViewRouterTests.swift */; };
 		BCB3F6141E86C71700E21EB2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EB1E8693AF00E21EB2 /* App.swift */; };
 		BCB3F6151E86C71700E21EB2 /* AppAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EC1E8693AF00E21EB2 /* AppAttributes.swift */; };
 		BCB3F6161E86C71700E21EB2 /* AppCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5ED1E8693AF00E21EB2 /* AppCategory.swift */; };
@@ -98,6 +97,9 @@
 		BCB3F6491E87673000E21EB2 /* TextViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6481E87673000E21EB2 /* TextViewType.swift */; };
 		BCB3F64C1E8768C200E21EB2 /* DynamicHeightTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F64A1E8768C200E21EB2 /* DynamicHeightTextCell.swift */; };
 		BCB3F64D1E8768C200E21EB2 /* DynamicHeightTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F64B1E8768C200E21EB2 /* DynamicHeightTextCell.xib */; };
+		BCB3F64E1E87901900E21EB2 /* TextViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6481E87673000E21EB2 /* TextViewType.swift */; };
+		BCB3F64F1E87901900E21EB2 /* DynamicHeightTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F64A1E8768C200E21EB2 /* DynamicHeightTextCell.swift */; };
+		BCB3F6501E87901900E21EB2 /* DynamicHeightTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F64B1E8768C200E21EB2 /* DynamicHeightTextCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,7 +177,6 @@
 		BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotImageCell.swift; sourceTree = "<group>"; };
 		BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotImageCell.xib; sourceTree = "<group>"; };
 		BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewProtocol.swift; sourceTree = "<group>"; };
-		BCB3F6111E86C57700E21EB2 /* AppDetailViewRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewRouterTests.swift; sourceTree = "<group>"; };
 		BCB3F6481E87673000E21EB2 /* TextViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewType.swift; sourceTree = "<group>"; };
 		BCB3F64A1E8768C200E21EB2 /* DynamicHeightTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextCell.swift; sourceTree = "<group>"; };
 		BCB3F64B1E8768C200E21EB2 /* DynamicHeightTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHeightTextCell.xib; sourceTree = "<group>"; };
@@ -270,7 +271,6 @@
 		BC8802E61E8247BD003AF838 /* AppStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				BCB3F6111E86C57700E21EB2 /* AppDetailViewRouterTests.swift */,
 				BC8802E91E8247BD003AF838 /* Info.plist */,
 			);
 			path = AppStoreTests;
@@ -328,10 +328,10 @@
 				BCB3F5C61E86931700E21EB2 /* Protocol */,
 				BCB3F5CC1E86931700E21EB2 /* View */,
 				BCB3F5C11E86931700E21EB2 /* AppListDataService.swift */,
-				BCB3F5C21E86931700E21EB2 /* AppListViewController.swift */,
 				BCB3F5C31E86931700E21EB2 /* AppListViewInteractor.swift */,
 				BCB3F5C41E86931700E21EB2 /* AppListViewPresenter.swift */,
 				BCB3F5C51E86931700E21EB2 /* AppListViewRouter.swift */,
+				BCB3F5C21E86931700E21EB2 /* AppListViewController.swift */,
 			);
 			path = RankedAppList;
 			sourceTree = "<group>";
@@ -590,6 +590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCB3F6301E86C72C00E21EB2 /* AppDetailHeaderViewCell.xib in Resources */,
+				BCB3F6501E87901900E21EB2 /* DynamicHeightTextCell.xib in Resources */,
 				BCB3F6201E86C71F00E21EB2 /* ScreenshotImageCell.xib in Resources */,
 				BCB3F6341E86C72C00E21EB2 /* AppDetailViewController.xib in Resources */,
 			);
@@ -806,6 +807,7 @@
 				BCB3F6141E86C71700E21EB2 /* App.swift in Sources */,
 				BCB3F63A1E86C78000E21EB2 /* AppType.swift in Sources */,
 				BCB3F6181E86C71700E21EB2 /* AppList.swift in Sources */,
+				BCB3F64F1E87901900E21EB2 /* DynamicHeightTextCell.swift in Sources */,
 				BCB3F61D1E86C71F00E21EB2 /* SlideViewProtocol.swift in Sources */,
 				BCB3F6161E86C71700E21EB2 /* AppCategory.swift in Sources */,
 				BCB3F63F1E86C78600E21EB2 /* AppListViewController.swift in Sources */,
@@ -828,8 +830,8 @@
 				BCB3F6151E86C71700E21EB2 /* AppAttributes.swift in Sources */,
 				BCB3F63E1E86C78600E21EB2 /* AppListDataService.swift in Sources */,
 				BCB3F6381E86C78000E21EB2 /* AppCategoryType.swift in Sources */,
-				BCB3F6121E86C57700E21EB2 /* AppDetailViewRouterTests.swift in Sources */,
 				BCB3F61F1E86C71F00E21EB2 /* ScreenshotImageCell.swift in Sources */,
+				BCB3F64E1E87901900E21EB2 /* TextViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

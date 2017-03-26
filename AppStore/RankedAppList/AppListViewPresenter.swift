@@ -8,7 +8,8 @@
 
 import UIKit
 
-class AppListViewPresenter: AppListViewPresenterProtocol {
+final class AppListViewPresenter: AppListViewPresenterProtocol {
+    var appList: [AppType]?
     lazy var appListViewInteractor: AppListViewInteractorProtocol? = AppListViewInteractor()
     lazy var appListViewRouter: AppListViewWireframeProtocol? = AppListViewRouter()
     weak var appListView: AppListViewProtocol?
@@ -37,6 +38,7 @@ class AppListViewPresenter: AppListViewPresenterProtocol {
                 app.index = index + 1
             }
         }
+        self.appList = appList
         appListView?.show(from: appList)
     }
     

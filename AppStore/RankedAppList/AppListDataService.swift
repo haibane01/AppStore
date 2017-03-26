@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 import AlamofireObjectMapper
-class AppListDataService {
+final class AppListDataService {
     func fetchAppList(category:AppCategoryType, completeHandler:@escaping ((_ AppList: [AppType]?)->()))
     {
         if let categorySerial = category.serial {

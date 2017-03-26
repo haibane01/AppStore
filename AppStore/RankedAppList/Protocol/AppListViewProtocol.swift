@@ -17,7 +17,7 @@ protocol AppListViewPresenterProtocol: class {
     var appListViewRouter: AppListViewWireframeProtocol? {get}
     var category: AppCategoryType? {get}
     weak var appListView: AppListViewProtocol? {get set}
-    
+    var appList: [AppType]? {get set}
     func viewDidLoad()
     func didSelect(_ app: AppType?)
     func didReceive(_ appList:[AppType]?)
