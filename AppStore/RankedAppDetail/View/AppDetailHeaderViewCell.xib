@@ -33,7 +33,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijj-ld-EkK" customClass="StarRatingLabel" customModule="AppStore" customModuleProvider="target">
-                        <rect key="frame" x="80" y="70" width="0.0" height="0.0"/>
+                        <rect key="frame" x="80" y="20" width="0.0" height="0.0"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -48,9 +48,9 @@
                     <constraint firstItem="Cmp-eS-fmV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="IHH-Ul-B0r"/>
                     <constraint firstItem="ijj-ld-EkK" firstAttribute="leading" secondItem="ZbB-hN-cZj" secondAttribute="trailing" constant="10" id="Jun-cl-I0N"/>
                     <constraint firstItem="ZbB-hN-cZj" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aW7-jm-jj9"/>
-                    <constraint firstAttribute="bottom" secondItem="ijj-ld-EkK" secondAttribute="bottom" constant="10" id="dZu-MW-9kJ"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ijj-ld-EkK" secondAttribute="bottom" constant="10" id="dZu-MW-9kJ"/>
                     <constraint firstItem="Cmp-eS-fmV" firstAttribute="leading" secondItem="ZbB-hN-cZj" secondAttribute="trailing" constant="10" id="eVd-wl-xrj"/>
-                    <constraint firstItem="ijj-ld-EkK" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Cmp-eS-fmV" secondAttribute="bottom" constant="10" id="hT1-IQ-rkS"/>
+                    <constraint firstItem="ijj-ld-EkK" firstAttribute="top" secondItem="Cmp-eS-fmV" secondAttribute="bottom" constant="10" id="hT1-IQ-rkS"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

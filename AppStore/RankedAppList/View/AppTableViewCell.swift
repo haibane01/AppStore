@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppTableViewCell: UITableViewCell, AppViewContainerType, AppViewType{
+final class AppTableViewCell: UITableViewCell, AppViewContainerType, AppViewType{
     
     @IBOutlet weak var indexLabel: UILabel?
     @IBOutlet weak var iconImageView: UIImageView?

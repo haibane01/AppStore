@@ -15,7 +15,6 @@
 		BC8802D81E8247BD003AF838 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8802D61E8247BD003AF838 /* Main.storyboard */; };
 		BC8802DA1E8247BD003AF838 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8802D91E8247BD003AF838 /* Assets.xcassets */; };
 		BC8802DD1E8247BD003AF838 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8802DB1E8247BD003AF838 /* LaunchScreen.storyboard */; };
-		BC8802E81E8247BD003AF838 /* AppStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8802E71E8247BD003AF838 /* AppStoreTests.swift */; };
 		BC8802F31E8247BD003AF838 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8802F21E8247BD003AF838 /* AppStoreUITests.swift */; };
 		BCB3F5CF1E86931700E21EB2 /* AppDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B01E86931700E21EB2 /* AppDetailDataService.swift */; };
 		BCB3F5D01E86931700E21EB2 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B11E86931700E21EB2 /* AppDetailViewController.swift */; };
@@ -56,6 +55,49 @@
 		BCB3F60C1E86BEE900E21EB2 /* ScreenshotImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */; };
 		BCB3F60D1E86BEE900E21EB2 /* ScreenshotImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */; };
 		BCB3F6101E86BF3000E21EB2 /* SlideViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */; };
+		BCB3F6121E86C57700E21EB2 /* AppDetailViewRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6111E86C57700E21EB2 /* AppDetailViewRouterTests.swift */; };
+		BCB3F6141E86C71700E21EB2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EB1E8693AF00E21EB2 /* App.swift */; };
+		BCB3F6151E86C71700E21EB2 /* AppAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EC1E8693AF00E21EB2 /* AppAttributes.swift */; };
+		BCB3F6161E86C71700E21EB2 /* AppCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5ED1E8693AF00E21EB2 /* AppCategory.swift */; };
+		BCB3F6171E86C71700E21EB2 /* AppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EE1E8693AF00E21EB2 /* AppDetail.swift */; };
+		BCB3F6181E86C71700E21EB2 /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EF1E8693AF00E21EB2 /* AppList.swift */; };
+		BCB3F6191E86C71700E21EB2 /* AppListFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F01E8693AF00E21EB2 /* AppListFeed.swift */; };
+		BCB3F61A1E86C71B00E21EB2 /* DynamicHeightViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F31E8693AF00E21EB2 /* DynamicHeightViewType.swift */; };
+		BCB3F61B1E86C71B00E21EB2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F41E8693AF00E21EB2 /* UIViewExtension.swift */; };
+		BCB3F61C1E86C71B00E21EB2 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6041E86A3DA00E21EB2 /* UIStackViewExtension.swift */; };
+		BCB3F61D1E86C71F00E21EB2 /* SlideViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */; };
+		BCB3F61E1E86C71F00E21EB2 /* SlideImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6021E869C1300E21EB2 /* SlideImageView.swift */; };
+		BCB3F61F1E86C71F00E21EB2 /* ScreenshotImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */; };
+		BCB3F6201E86C71F00E21EB2 /* ScreenshotImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */; };
+		BCB3F6211E86C72300E21EB2 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3142071E8560CB001C9A87 /* ArrayExtension.swift */; };
+		BCB3F6221E86C72600E21EB2 /* AppDetailHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B71E86931700E21EB2 /* AppDetailHeaderType.swift */; };
+		BCB3F6231E86C72600E21EB2 /* AppDetailHeaderViewContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B81E86931700E21EB2 /* AppDetailHeaderViewContainerType.swift */; };
+		BCB3F6241E86C72600E21EB2 /* AppDetailHeaderViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B91E86931700E21EB2 /* AppDetailHeaderViewType.swift */; };
+		BCB3F6251E86C72600E21EB2 /* AppDetailType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5BA1E86931700E21EB2 /* AppDetailType.swift */; };
+		BCB3F6261E86C72600E21EB2 /* AppDetailViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5BB1E86931700E21EB2 /* AppDetailViewProtocol.swift */; };
+		BCB3F62F1E86C72C00E21EB2 /* AppDetailHeaderViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5BD1E86931700E21EB2 /* AppDetailHeaderViewCell.swift */; };
+		BCB3F6301E86C72C00E21EB2 /* AppDetailHeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F5BE1E86931700E21EB2 /* AppDetailHeaderViewCell.xib */; };
+		BCB3F6311E86C72C00E21EB2 /* StarRatingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5BF1E86931700E21EB2 /* StarRatingLabel.swift */; };
+		BCB3F6321E86C72C00E21EB2 /* AppDetailDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B01E86931700E21EB2 /* AppDetailDataService.swift */; };
+		BCB3F6331E86C72C00E21EB2 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B11E86931700E21EB2 /* AppDetailViewController.swift */; };
+		BCB3F6341E86C72C00E21EB2 /* AppDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F5B21E86931700E21EB2 /* AppDetailViewController.xib */; };
+		BCB3F6351E86C72C00E21EB2 /* AppDetailViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B31E86931700E21EB2 /* AppDetailViewInteractor.swift */; };
+		BCB3F6361E86C72C00E21EB2 /* AppDetailViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B41E86931700E21EB2 /* AppDetailViewPresenter.swift */; };
+		BCB3F6371E86C72C00E21EB2 /* AppDetailViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5B51E86931700E21EB2 /* AppDetailViewRouter.swift */; };
+		BCB3F6381E86C78000E21EB2 /* AppCategoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C71E86931700E21EB2 /* AppCategoryType.swift */; };
+		BCB3F6391E86C78000E21EB2 /* AppListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C81E86931700E21EB2 /* AppListViewProtocol.swift */; };
+		BCB3F63A1E86C78000E21EB2 /* AppType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C91E86931700E21EB2 /* AppType.swift */; };
+		BCB3F63B1E86C78000E21EB2 /* AppViewContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5CA1E86931700E21EB2 /* AppViewContainerType.swift */; };
+		BCB3F63C1E86C78000E21EB2 /* AppViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5CB1E86931700E21EB2 /* AppViewType.swift */; };
+		BCB3F63D1E86C78600E21EB2 /* AppTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5CD1E86931700E21EB2 /* AppTableViewCell.swift */; };
+		BCB3F63E1E86C78600E21EB2 /* AppListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C11E86931700E21EB2 /* AppListDataService.swift */; };
+		BCB3F63F1E86C78600E21EB2 /* AppListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C21E86931700E21EB2 /* AppListViewController.swift */; };
+		BCB3F6401E86C78600E21EB2 /* AppListViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C31E86931700E21EB2 /* AppListViewInteractor.swift */; };
+		BCB3F6411E86C78600E21EB2 /* AppListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C41E86931700E21EB2 /* AppListViewPresenter.swift */; };
+		BCB3F6421E86C78600E21EB2 /* AppListViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5C51E86931700E21EB2 /* AppListViewRouter.swift */; };
+		BCB3F6491E87673000E21EB2 /* TextViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6481E87673000E21EB2 /* TextViewType.swift */; };
+		BCB3F64C1E8768C200E21EB2 /* DynamicHeightTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F64A1E8768C200E21EB2 /* DynamicHeightTextCell.swift */; };
+		BCB3F64D1E8768C200E21EB2 /* DynamicHeightTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCB3F64B1E8768C200E21EB2 /* DynamicHeightTextCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,7 +132,6 @@
 		BC8802DC1E8247BD003AF838 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC8802DE1E8247BD003AF838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8802E31E8247BD003AF838 /* AppStoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BC8802E71E8247BD003AF838 /* AppStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreTests.swift; sourceTree = "<group>"; };
 		BC8802E91E8247BD003AF838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8802EE1E8247BD003AF838 /* AppStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8802F21E8247BD003AF838 /* AppStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
@@ -134,6 +175,10 @@
 		BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenshotImageCell.swift; sourceTree = "<group>"; };
 		BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScreenshotImageCell.xib; sourceTree = "<group>"; };
 		BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewProtocol.swift; sourceTree = "<group>"; };
+		BCB3F6111E86C57700E21EB2 /* AppDetailViewRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewRouterTests.swift; sourceTree = "<group>"; };
+		BCB3F6481E87673000E21EB2 /* TextViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewType.swift; sourceTree = "<group>"; };
+		BCB3F64A1E8768C200E21EB2 /* DynamicHeightTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightTextCell.swift; sourceTree = "<group>"; };
+		BCB3F64B1E8768C200E21EB2 /* DynamicHeightTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicHeightTextCell.xib; sourceTree = "<group>"; };
 		C8F39901F86427F1F9FE3265 /* Pods-AppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppStore/Pods-AppStore.release.xcconfig"; sourceTree = "<group>"; };
 		E905481A9410FF03CA20AB0E /* Pods-AppStoreUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppStoreUITests/Pods-AppStoreUITests.release.xcconfig"; sourceTree = "<group>"; };
 		EA8F61C41BF90F642D645BE8 /* Pods_AppStoreUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -225,7 +270,7 @@
 		BC8802E61E8247BD003AF838 /* AppStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				BC8802E71E8247BD003AF838 /* AppStoreTests.swift */,
+				BCB3F6111E86C57700E21EB2 /* AppDetailViewRouterTests.swift */,
 				BC8802E91E8247BD003AF838 /* Info.plist */,
 			);
 			path = AppStoreTests;
@@ -246,11 +291,11 @@
 				BCB3F5B61E86931700E21EB2 /* Protocol */,
 				BCB3F5BC1E86931700E21EB2 /* View */,
 				BCB3F5B01E86931700E21EB2 /* AppDetailDataService.swift */,
-				BCB3F5B11E86931700E21EB2 /* AppDetailViewController.swift */,
-				BCB3F5B21E86931700E21EB2 /* AppDetailViewController.xib */,
 				BCB3F5B31E86931700E21EB2 /* AppDetailViewInteractor.swift */,
 				BCB3F5B41E86931700E21EB2 /* AppDetailViewPresenter.swift */,
 				BCB3F5B51E86931700E21EB2 /* AppDetailViewRouter.swift */,
+				BCB3F5B11E86931700E21EB2 /* AppDetailViewController.swift */,
+				BCB3F5B21E86931700E21EB2 /* AppDetailViewController.xib */,
 			);
 			path = RankedAppDetail;
 			sourceTree = "<group>";
@@ -355,6 +400,7 @@
 		BCB3F5F51E8693AF00E21EB2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BCB3F6471E87671A00E21EB2 /* DynamicHeightCell */,
 				BCB3F5FE1E8695FD00E21EB2 /* SlideView */,
 				BCB3F60A1E86BEE900E21EB2 /* ScreenshotImageCell.swift */,
 				BCB3F60B1E86BEE900E21EB2 /* ScreenshotImageCell.xib */,
@@ -377,6 +423,16 @@
 				BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		BCB3F6471E87671A00E21EB2 /* DynamicHeightCell */ = {
+			isa = PBXGroup;
+			children = (
+				BCB3F6481E87673000E21EB2 /* TextViewType.swift */,
+				BCB3F64A1E8768C200E21EB2 /* DynamicHeightTextCell.swift */,
+				BCB3F64B1E8768C200E21EB2 /* DynamicHeightTextCell.xib */,
+			);
+			path = DynamicHeightCell;
 			sourceTree = "<group>";
 		};
 		BD9B6261B35119DE68D61224 /* Frameworks */ = {
@@ -523,6 +579,7 @@
 				BCB3F5E81E86931700E21EB2 /* AppTableViewCell.xib in Resources */,
 				BC8802DA1E8247BD003AF838 /* Assets.xcassets in Resources */,
 				BC8802D81E8247BD003AF838 /* Main.storyboard in Resources */,
+				BCB3F64D1E8768C200E21EB2 /* DynamicHeightTextCell.xib in Resources */,
 				BCB3F5DB1E86931700E21EB2 /* AppDetailHeaderViewCell.xib in Resources */,
 				BCB3F5D11E86931700E21EB2 /* AppDetailViewController.xib in Resources */,
 			);
@@ -532,6 +589,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB3F6301E86C72C00E21EB2 /* AppDetailHeaderViewCell.xib in Resources */,
+				BCB3F6201E86C71F00E21EB2 /* ScreenshotImageCell.xib in Resources */,
+				BCB3F6341E86C72C00E21EB2 /* AppDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +760,7 @@
 				BCB3F5F71E8693AF00E21EB2 /* AppAttributes.swift in Sources */,
 				BCB3F5E31E86931700E21EB2 /* AppListViewProtocol.swift in Sources */,
 				BCB3F5FB1E8693AF00E21EB2 /* AppListFeed.swift in Sources */,
+				BCB3F64C1E8768C200E21EB2 /* DynamicHeightTextCell.swift in Sources */,
 				BCB3F5E61E86931700E21EB2 /* AppViewType.swift in Sources */,
 				BCB3F5DC1E86931700E21EB2 /* StarRatingLabel.swift in Sources */,
 				BCB3F5FA1E8693AF00E21EB2 /* AppList.swift in Sources */,
@@ -724,6 +785,7 @@
 				BCB3F5E01E86931700E21EB2 /* AppListViewPresenter.swift in Sources */,
 				BCB3F5D31E86931700E21EB2 /* AppDetailViewPresenter.swift in Sources */,
 				BCB3F5F81E8693AF00E21EB2 /* AppCategory.swift in Sources */,
+				BCB3F6491E87673000E21EB2 /* TextViewType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -731,7 +793,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC8802E81E8247BD003AF838 /* AppStoreTests.swift in Sources */,
+				BCB3F6311E86C72C00E21EB2 /* StarRatingLabel.swift in Sources */,
+				BCB3F62F1E86C72C00E21EB2 /* AppDetailHeaderViewCell.swift in Sources */,
+				BCB3F6351E86C72C00E21EB2 /* AppDetailViewInteractor.swift in Sources */,
+				BCB3F6211E86C72300E21EB2 /* ArrayExtension.swift in Sources */,
+				BCB3F61B1E86C71B00E21EB2 /* UIViewExtension.swift in Sources */,
+				BCB3F6171E86C71700E21EB2 /* AppDetail.swift in Sources */,
+				BCB3F6391E86C78000E21EB2 /* AppListViewProtocol.swift in Sources */,
+				BCB3F6261E86C72600E21EB2 /* AppDetailViewProtocol.swift in Sources */,
+				BCB3F6401E86C78600E21EB2 /* AppListViewInteractor.swift in Sources */,
+				BCB3F6221E86C72600E21EB2 /* AppDetailHeaderType.swift in Sources */,
+				BCB3F6141E86C71700E21EB2 /* App.swift in Sources */,
+				BCB3F63A1E86C78000E21EB2 /* AppType.swift in Sources */,
+				BCB3F6181E86C71700E21EB2 /* AppList.swift in Sources */,
+				BCB3F61D1E86C71F00E21EB2 /* SlideViewProtocol.swift in Sources */,
+				BCB3F6161E86C71700E21EB2 /* AppCategory.swift in Sources */,
+				BCB3F63F1E86C78600E21EB2 /* AppListViewController.swift in Sources */,
+				BCB3F6331E86C72C00E21EB2 /* AppDetailViewController.swift in Sources */,
+				BCB3F6241E86C72600E21EB2 /* AppDetailHeaderViewType.swift in Sources */,
+				BCB3F6421E86C78600E21EB2 /* AppListViewRouter.swift in Sources */,
+				BCB3F61A1E86C71B00E21EB2 /* DynamicHeightViewType.swift in Sources */,
+				BCB3F61C1E86C71B00E21EB2 /* UIStackViewExtension.swift in Sources */,
+				BCB3F6321E86C72C00E21EB2 /* AppDetailDataService.swift in Sources */,
+				BCB3F6411E86C78600E21EB2 /* AppListViewPresenter.swift in Sources */,
+				BCB3F61E1E86C71F00E21EB2 /* SlideImageView.swift in Sources */,
+				BCB3F6361E86C72C00E21EB2 /* AppDetailViewPresenter.swift in Sources */,
+				BCB3F63D1E86C78600E21EB2 /* AppTableViewCell.swift in Sources */,
+				BCB3F6251E86C72600E21EB2 /* AppDetailType.swift in Sources */,
+				BCB3F6231E86C72600E21EB2 /* AppDetailHeaderViewContainerType.swift in Sources */,
+				BCB3F6191E86C71700E21EB2 /* AppListFeed.swift in Sources */,
+				BCB3F63B1E86C78000E21EB2 /* AppViewContainerType.swift in Sources */,
+				BCB3F63C1E86C78000E21EB2 /* AppViewType.swift in Sources */,
+				BCB3F6371E86C72C00E21EB2 /* AppDetailViewRouter.swift in Sources */,
+				BCB3F6151E86C71700E21EB2 /* AppAttributes.swift in Sources */,
+				BCB3F63E1E86C78600E21EB2 /* AppListDataService.swift in Sources */,
+				BCB3F6381E86C78000E21EB2 /* AppCategoryType.swift in Sources */,
+				BCB3F6121E86C57700E21EB2 /* AppDetailViewRouterTests.swift in Sources */,
+				BCB3F61F1E86C71F00E21EB2 /* ScreenshotImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

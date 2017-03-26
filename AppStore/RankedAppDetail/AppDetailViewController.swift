@@ -23,6 +23,7 @@ class AppDetailViewController: UIViewController, AppDetailViewProtocol {
         tableView?.tableFooterView = UIView()
         tableView?.register(UINib(nibName: "AppDetailHeaderViewCell", bundle: nil), forCellReuseIdentifier: "AppDetailHeaderViewCell")
         tableView?.register(UINib(nibName: "ScreenshotImageCell", bundle: nil), forCellReuseIdentifier: "ScreenshotImageCell")
+        tableView?.register(UINib(nibName: "DynamicHeightTextCell", bundle: nil), forCellReuseIdentifier: "DynamicHeightTextCell")
         tableView?.register(UITableViewCell.self, forCellReuseIdentifier: "UITableViewCell")
         
     }
@@ -45,36 +46,53 @@ extension AppDetailViewController: UITableViewDelegate {
 }
 
 extension AppDetailViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return appDetailViewPresenter?.sectionCount ?? 0
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return appDetailViewPresenter?.rowCount(section: section) ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-        switch indexPath.row {
-        case 0:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "AppDetailHeaderViewCell", for: indexPath) as! AppDetailHeaderViewCell
-            if let appDetil = self.appDetailViewPresenter?.appDetail
-            {
-                cell.configure(with: appDetil)
+        if let section = AppDetailViewSection(rawValue: indexPath.section)
+        {
+            switch  section {
+            case .header:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "AppDetailHeaderViewCell", for: indexPath) as! AppDetailHeaderViewCell
+                if let appDetil = self.appDetailViewPresenter?.appDetail
+                {
+                    cell.configure(with: appDetil)
+                }
+                return cell
+            case .screenshot:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "ScreenshotImageCell", for: indexPath) as! ScreenshotImageCell
+                if let appDetil = self.appDetailViewPresenter?.appDetail
+                {
+                    cell.configure(with: appDetil.images)
+                }
+                return cell
+            case .description:
+                let cell = tableView.dequeueReusableCell(withIdentifier: "DynamicHeightTextCell", for: indexPath) as! DynamicHeightTextCell
+                if let appDetil = self.appDetailViewPresenter?.appDetail
+                {
+                    let textConfig = TextConfig(font: UIFont.systemFont(ofSize: 13), fontColor: UIColor.darkGray)
+                    cell.textConfig = textConfig
+                    cell.configureText(text: appDetil.detailDescription)
+                }
+                return cell
             }
-            return cell
-        case 1:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "ScreenshotImageCell", for: indexPath) as! ScreenshotImageCell
-            if let appDetil = self.appDetailViewPresenter?.appDetail
-            {
-                cell.configure(with: appDetil.images)
-            }
-            return cell
-        default:
+        } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
             return cell
         }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 1 {
-            return UIScreen.main.bounds.height
+        if let section = AppDetailViewSection(rawValue: indexPath.section)
+        {
+            if section == .screenshot {
+                return UIScreen.main.bounds.height
+            }
         }
         return UITableViewAutomaticDimension
     }
