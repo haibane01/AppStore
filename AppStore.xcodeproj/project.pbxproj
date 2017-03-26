@@ -48,7 +48,6 @@
 		BCB3F5F91E8693AF00E21EB2 /* AppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EE1E8693AF00E21EB2 /* AppDetail.swift */; };
 		BCB3F5FA1E8693AF00E21EB2 /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EF1E8693AF00E21EB2 /* AppList.swift */; };
 		BCB3F5FB1E8693AF00E21EB2 /* AppListFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F01E8693AF00E21EB2 /* AppListFeed.swift */; };
-		BCB3F5FC1E8693AF00E21EB2 /* DynamicHeightViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F31E8693AF00E21EB2 /* DynamicHeightViewType.swift */; };
 		BCB3F5FD1E8693AF00E21EB2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F41E8693AF00E21EB2 /* UIViewExtension.swift */; };
 		BCB3F6031E869C1300E21EB2 /* SlideImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6021E869C1300E21EB2 /* SlideImageView.swift */; };
 		BCB3F6051E86A3DA00E21EB2 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6041E86A3DA00E21EB2 /* UIStackViewExtension.swift */; };
@@ -61,7 +60,6 @@
 		BCB3F6171E86C71700E21EB2 /* AppDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EE1E8693AF00E21EB2 /* AppDetail.swift */; };
 		BCB3F6181E86C71700E21EB2 /* AppList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5EF1E8693AF00E21EB2 /* AppList.swift */; };
 		BCB3F6191E86C71700E21EB2 /* AppListFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F01E8693AF00E21EB2 /* AppListFeed.swift */; };
-		BCB3F61A1E86C71B00E21EB2 /* DynamicHeightViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F31E8693AF00E21EB2 /* DynamicHeightViewType.swift */; };
 		BCB3F61B1E86C71B00E21EB2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F5F41E8693AF00E21EB2 /* UIViewExtension.swift */; };
 		BCB3F61C1E86C71B00E21EB2 /* UIStackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F6041E86A3DA00E21EB2 /* UIStackViewExtension.swift */; };
 		BCB3F61D1E86C71F00E21EB2 /* SlideViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB3F60F1E86BF3000E21EB2 /* SlideViewProtocol.swift */; };
@@ -170,7 +168,6 @@
 		BCB3F5EE1E8693AF00E21EB2 /* AppDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetail.swift; sourceTree = "<group>"; };
 		BCB3F5EF1E8693AF00E21EB2 /* AppList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppList.swift; sourceTree = "<group>"; };
 		BCB3F5F01E8693AF00E21EB2 /* AppListFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppListFeed.swift; sourceTree = "<group>"; };
-		BCB3F5F31E8693AF00E21EB2 /* DynamicHeightViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicHeightViewType.swift; sourceTree = "<group>"; };
 		BCB3F5F41E8693AF00E21EB2 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		BCB3F6021E869C1300E21EB2 /* SlideImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideImageView.swift; sourceTree = "<group>"; };
 		BCB3F6041E86A3DA00E21EB2 /* UIStackViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStackViewExtension.swift; sourceTree = "<group>"; };
@@ -392,7 +389,6 @@
 		BCB3F5F21E8693AF00E21EB2 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				BCB3F5F31E8693AF00E21EB2 /* DynamicHeightViewType.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -767,7 +763,6 @@
 				BCB3F5FA1E8693AF00E21EB2 /* AppList.swift in Sources */,
 				BCB3F5DF1E86931700E21EB2 /* AppListViewInteractor.swift in Sources */,
 				BCB3F5F61E8693AF00E21EB2 /* App.swift in Sources */,
-				BCB3F5FC1E8693AF00E21EB2 /* DynamicHeightViewType.swift in Sources */,
 				BCB3F5D51E86931700E21EB2 /* AppDetailHeaderType.swift in Sources */,
 				BCB3F5D01E86931700E21EB2 /* AppDetailViewController.swift in Sources */,
 				BCB3F5CF1E86931700E21EB2 /* AppDetailDataService.swift in Sources */,
@@ -814,7 +809,6 @@
 				BCB3F6331E86C72C00E21EB2 /* AppDetailViewController.swift in Sources */,
 				BCB3F6241E86C72600E21EB2 /* AppDetailHeaderViewType.swift in Sources */,
 				BCB3F6421E86C78600E21EB2 /* AppListViewRouter.swift in Sources */,
-				BCB3F61A1E86C71B00E21EB2 /* DynamicHeightViewType.swift in Sources */,
 				BCB3F61C1E86C71B00E21EB2 /* UIStackViewExtension.swift in Sources */,
 				BCB3F6321E86C72C00E21EB2 /* AppDetailDataService.swift in Sources */,
 				BCB3F6411E86C78600E21EB2 /* AppListViewPresenter.swift in Sources */,
