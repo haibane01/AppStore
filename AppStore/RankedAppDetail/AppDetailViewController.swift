@@ -101,14 +101,19 @@ extension AppDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        switch indexPath.row {
-        case 0:
-            return 80
-        case 1:
-            return UIScreen.main.bounds.height
-        default:
-            return 44
+        if let section = AppDetailViewSection(rawValue: indexPath.section)
+        {
+            switch section {
+            case .header:
+                return 80
+            case .screenshot:
+                return UIScreen.main.bounds.height
+            default:
+                return 80
+            }
         }
+        return 80
+
     }
 
 }
